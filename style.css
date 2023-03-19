@@ -1,174 +1,129 @@
-/* Global Styles */
-
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #A2AA9B;
-}
-
-a {
-  color: #3D6184;
-}
-
-h1, h2, h3 {
-  margin-top: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 /* Header */
-
 header {
-  background-color: #3D6184;
-  color: #fff;
-  padding: 20px;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header ul {
-  float: right;
-}
-
-header li {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-/* Welcome Section */
-
-#welcome {
   background-color: #445537;
-  padding: 100px 0;
-  text-align: center;
-}
-
-#welcome img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-}
-
-#welcome h1 {
   color: #A2AA9B;
-  font-size: 40px;
-  margin-top: 0;
-}
-
-#welcome p {
-  color: #fff;
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-#welcome button {
-  background-color: #74553A;
-  border: none;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* About Section */
-
-#about {
-  background-color: #A2AA9B;
-  padding: 100px 0;
+  padding: 20px;
   text-align: center;
 }
 
-#about h2 {
-  color: #fff;
-  font-size: 40px;
-  margin-top: 0;
-}
-
-#about p {
-  color: #3D6184;
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-/* Portfolio Section */
-
-#portfolio {
-  background-color: #74553A;
-  color: #fff;
-  padding: 100px 0;
-  text-align: center;
-}
-
-#portfolio h2 {
-  font-size: 40px;
-  margin-top: 0;
-}
-
-#portfolio p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-#portfolio ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#portfolio li {
-  flex: 1 0 300px;
-  margin: 10px;
-}
-
-#portfolio img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-/* Contact Section */
-
-#contact {
+/* Navigation menu */
+nav {
   background-color: #3D6184;
-  color: #fff;
-  padding: 100px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+nav a {
+  color: #A2AA9B;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Welcome section */
+.welcome-image {
+  background-image: url("image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.welcome-message {
+  background-color: #74553A;
+  color: #A2AA9B;
+  padding: 50px;
   text-align: center;
 }
 
-#contact h2 {
-  font-size: 40px;
-  margin-top: 0;
+.welcome-message h1 {
+  font-size: 48px;
+  margin-bottom: 0;
 }
 
-#contact p {
+/* About Me section */
+.about-me {
+  background-color: #445537;
+  color: #A2AA9B;
+  padding: 50px;
+  text-align: center;
+}
+
+.about-me h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.about-me p {
   font-size: 20px;
-  margin-bottom: 30px;
 }
 
-#contact form {
+/* Portfolio section */
+.portfolio {
+  background-color: #3D6184;
+  color: #A2AA9B;
+  padding: 50px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.portfolio img {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+}
+
+/* Contact section */
+.contact {
+  background-color: #74553A;
+  color: #A2AA9B;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#contact label {
-  display: block;
-  text-align: left;
+.contact label {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
-#contact input, #contact textarea {
-  width: 100%;
+.contact input,
+.contact textarea {
   padding: 10px;
-  font-size: 18px;
-  border-radius: 
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #445537;
+  color: #A2AA9B;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #A2AA9B;
+  color: #445537;
+}
+
