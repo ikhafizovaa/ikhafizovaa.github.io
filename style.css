@@ -1,24 +1,71 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #222;
+}
+
 /* Header */
 header {
-  background-color: #445537;
-  color: #A2AA9B;
+  background-color: #222;
+  color: #fff;
   padding: 20px;
   text-align: center;
 }
 
 /* Navigation menu */
 nav {
-  background-color: #3D6184;
+  background-color: #fff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 80px;
+  padding: 0 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-  color: #A2AA9B;
-  text-decoration: none;
-  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #f8f8f8;
+}
+
+nav .logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
 }
 
 /* Welcome section */
@@ -26,69 +73,73 @@ nav a {
   background-image: url("image.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome-message {
-  background-color: #74553A;
-  color: #A2AA9B;
+  background-color: #f8f8f8;
+  color: #222;
   padding: 50px;
   text-align: center;
 }
 
 .welcome-message h1 {
   font-size: 48px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 /* About Me section */
 .about-me {
-  background-color: #445537;
-  color: #A2AA9B;
+  background-color: #fff;
+  color: #222;
   padding: 50px;
   text-align: center;
 }
 
 .about-me h2 {
   font-size: 36px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .about-me p {
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 /* Portfolio section */
 .portfolio {
-  background-color: #3D6184;
-  color: #A2AA9B;
+  background-color: #f8f8f8;
+  color: #222;
   padding: 50px;
   text-align: center;
 }
 
 .portfolio h2 {
   font-size: 36px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .portfolio img {
   width: 100%;
   max-width: 400px;
   margin: 20px;
+  border-radius: 5px;
 }
 
 /* Contact section */
 .contact {
-  background-color: #74553A;
-  color: #A2AA9B;
+  background-color: #222;
+  color: #fff;
   padding: 50px;
   text-align: center;
 }
 
 .contact h2 {
   font-size: 36px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .contact form {
@@ -104,26 +155,4 @@ nav a {
 
 .contact input,
 .contact textarea {
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 500px;
-}
-
-.contact button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: #445537;
-  color: #A2AA9B;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.contact button:hover {
-  background-color: #A2AA9B;
-  color: #445537;
-}
+  padding:
