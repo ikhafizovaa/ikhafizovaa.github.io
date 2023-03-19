@@ -1,75 +1,174 @@
-/* General Styles */
+/* Global Styles */
+
 body {
   font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #A2AA9B;
+}
+
+a {
+  color: #3D6184;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+ul {
   margin: 0;
   padding: 0;
-  color: #A2AA9B;
+  list-style: none;
 }
 
-/* Header Styles */
+/* Header */
+
 header {
   background-color: #3D6184;
-  padding: 10px;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav a {
-  color: #A2AA9B;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0 10px;
-  transition: all 0.3s ease-in-out;
-}
-nav a:hover {
-  color: #FFFFFF;
-  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+  color: #fff;
+  padding: 20px;
 }
 
-/* Main Content Styles */
-main {
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header ul {
+  float: right;
+}
+
+header li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Welcome Section */
+
+#welcome {
   background-color: #445537;
-  padding: 50px;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#welcome img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#welcome h1 {
+  color: #A2AA9B;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+#welcome p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+#welcome button {
+  background-color: #74553A;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* About Section */
+
+#about {
+  background-color: #A2AA9B;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#about h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+#about p {
+  color: #3D6184;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Portfolio Section */
+
+#portfolio {
+  background-color: #74553A;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+#portfolio p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+#portfolio ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#portfolio li {
+  flex: 1 0 300px;
+  margin: 10px;
+}
+
+#portfolio img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Contact Section */
+
+#contact {
+  background-color: #3D6184;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+#contact p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+#contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section {
-  background-color: #FFFFFF;
-  padding: 40px;
-  margin: 20px 0;
+
+#contact label {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#contact input, #contact textarea {
   width: 100%;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
-section h1, section h2 {
-  color: #74553A;
-}
-section p {
-  color: #A2AA9B;
+  padding: 10px;
   font-size: 18px;
-  line-height: 1.5;
-  margin: 20px 0;
-}
-button {
-  background-color: #74553A;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-button:hover {
-  background-color: #A2AA9B;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  transform: scale(1.05);
-}
+  border-radius: 
