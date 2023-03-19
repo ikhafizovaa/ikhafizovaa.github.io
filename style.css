@@ -1,116 +1,75 @@
-/* Header */
-header {
-  background-color: #445537;
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   color: #A2AA9B;
-  padding: 20px;
-  text-align: center;
 }
 
-/* Navigation menu */
-nav {
+/* Header Styles */
+header {
   background-color: #3D6184;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 50px;
+  padding: 10px;
 }
-
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 nav a {
   color: #A2AA9B;
   text-decoration: none;
-  font-size: 20px;
-}
-
-/* Welcome section */
-.welcome-image {
-  background-image: url("image.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-}
-
-.welcome-message {
-  background-color: #74553A;
-  color: #A2AA9B;
-  padding: 50px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 10px;
   transition: all 0.3s ease-in-out;
 }
-
-.welcome-message:hover {
-  background-color: #A2AA9B;
-  color: #74553A;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+nav a:hover {
+  color: #FFFFFF;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
 }
 
-.welcome-message h1 {
-  font-size: 48px;
-  margin-bottom: 0;
-}
-
-/* About Me section */
-.about-me {
+/* Main Content Styles */
+main {
   background-color: #445537;
-  color: #A2AA9B;
   padding: 50px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.about-me:hover {
-  background-color: #A2AA9B;
-  color: #445537;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-.about-me h2 {
-  font-size: 36px;
-  margin-bottom: 0;
-}
-
-.about-me p {
-  font-size: 20px;
-}
-
-/* Portfolio section */
-.portfolio {
-  background-color: #3D6184;
-  color: #A2AA9B;
-  padding: 50px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio:hover {
-  background-color: #A2AA9B;
-  color: #3D6184;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-.portfolio h2 {
-  font-size: 36px;
-  margin-bottom: 0;
-}
-
-.portfolio img {
+section {
+  background-color: #FFFFFF;
+  padding: 40px;
+  margin: 20px 0;
   width: 100%;
-  max-width: 400px;
-  margin: 20px;
-}
-
-/* Contact section */
-.contact {
-  background-color: #74553A;
-  color: #A2AA9B;
-  padding: 50px;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+section h1, section h2 {
+  color: #74553A;
+}
+section p {
+  color: #A2AA9B;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+button {
+  background-color: #74553A;
+  color: #FFFFFF;
+  border: none;
   border-radius: 5px;
-  transition: all 0.
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #A2AA9B;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
