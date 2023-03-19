@@ -1,77 +1,59 @@
-/* Global Styles */
+/* General */
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+html {
+  scroll-behavior: smooth;
 }
 
-a {
-  color: #A2AA9B;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-a:hover {
-  color: #3D6184;
-}
-
-img {
-  max-width: 100%;
-}
-
-button {
-  background-color: #445537;
-  border: none;
-  border-radius: 5px;
-  color: #A2AA9B;
-  cursor: pointer;
-  font-size: 20px;
-  padding: 10px 20px;
-  transition: all 0.3s ease-in-out;
-}
-
-button:hover {
-  background-color: #A2AA9B;
-  color: #445537;
+body {
+  font-family: Arial, sans-serif;
 }
 
 /* Header */
 header {
   background-color: #445537;
-  color: #A2AA9B;
+  color: #FFFFFF;
   padding: 20px;
   text-align: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 /* Navigation menu */
 nav {
-  background-color: #3D6184;
+  background-color: #FFFFFF;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 50px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 nav a {
+  color: #8F6D55;
+  text-decoration: none;
   font-size: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
 }
 
 nav a:hover {
-  background-color: #A2AA9B;
-  color: #3D6184;
+  color: #445537;
 }
 
 /* Welcome section */
@@ -87,13 +69,12 @@ nav a:hover {
 }
 
 .welcome-message {
-  background-color: #74553A;
-  color: #A2AA9B;
+  background-color: #FFFFFF;
+  color: #445537;
   padding: 50px;
   text-align: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  margin: 50px;
+  position: relative;
+  z-index: 2;
 }
 
 .welcome-message h1 {
@@ -103,13 +84,10 @@ nav a:hover {
 
 /* About Me section */
 .about-me {
-  background-color: #445537;
-  color: #A2AA9B;
+  background-color: #FFFFFF;
+  color: #445537;
   padding: 50px;
   text-align: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  margin: 50px;
 }
 
 .about-me h2 {
@@ -119,12 +97,68 @@ nav a:hover {
 
 .about-me p {
   font-size: 20px;
-  margin: 20px 0;
+  line-height: 1.5;
+  margin-bottom: 30px;
 }
 
 /* Portfolio section */
 .portfolio {
-  background-color: #3D6184;
-  color: #A2AA9B;
+  background-color: #FFFFFF;
+  color: #445537;
   padding: 50px;
-  text-align
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.portfolio img {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact section */
+.contact {
+  background-color: #FFFFFF;
+  color: #445537;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact label {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+}
+
