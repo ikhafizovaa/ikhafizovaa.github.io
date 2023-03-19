@@ -1,175 +1,130 @@
 /* Global Styles */
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #A2AA9B;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 a {
+  color: #A2AA9B;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
   color: #3D6184;
 }
 
-h1, h2, h3 {
-  margin-top: 0;
+img {
+  max-width: 100%;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+button {
+  background-color: #445537;
+  border: none;
+  border-radius: 5px;
+  color: #A2AA9B;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #A2AA9B;
+  color: #445537;
 }
 
 /* Header */
-
 header {
-  background-color: #3D6184;
-  color: #fff;
-  padding: 20px;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header ul {
-  float: right;
-}
-
-header li {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-/* Welcome Section */
-
-#welcome {
   background-color: #445537;
-  padding: 100px 0;
-  text-align: center;
-}
-
-#welcome img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-}
-
-#welcome h1 {
   color: #A2AA9B;
-  font-size: 40px;
-  margin-top: 0;
-}
-
-#welcome p {
-  color: #fff;
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-#welcome button {
-  background-color: #74553A;
-  border: none;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* About Section */
-
-#about {
-  background-color: #A2AA9B;
-  padding: 100px 0;
+  padding: 20px;
   text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-#about h2 {
-  color: #fff;
-  font-size: 40px;
-  margin-top: 0;
-}
-
-#about p {
-  color: #3D6184;
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-/* Portfolio Section */
-
-#portfolio {
-  background-color: #74553A;
-  color: #fff;
-  padding: 100px 0;
-  text-align: center;
-}
-
-#portfolio h2 {
-  font-size: 40px;
-  margin-top: 0;
-}
-
-#portfolio p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-#portfolio ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#portfolio li {
-  flex: 1 0 300px;
-  margin: 10px;
-}
-
-#portfolio img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-/* Contact Section */
-
-#contact {
+/* Navigation menu */
+nav {
   background-color: #3D6184;
-  color: #fff;
-  padding: 100px 0;
-  text-align: center;
-}
-
-#contact h2 {
-  font-size: 40px;
-  margin-top: 0;
-}
-
-#contact p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-#contact form {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #A2AA9B;
+  color: #3D6184;
+}
+
+/* Welcome section */
+.welcome-image {
+  background-image: url("image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-#contact label {
-  display: block;
-  text-align: left;
-  font-size: 20px;
-  margin-bottom: 10px;
+.welcome-message {
+  background-color: #74553A;
+  color: #A2AA9B;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin: 50px;
 }
 
-#contact input, #contact textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 
+.welcome-message h1 {
+  font-size: 48px;
+  margin-bottom: 0;
 }
+
+/* About Me section */
+.about-me {
+  background-color: #445537;
+  color: #A2AA9B;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin: 50px;
+}
+
+.about-me h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.about-me p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* Portfolio section */
+.portfolio {
+  background-color: #3D6184;
+  color: #A2AA9B;
+  padding: 50px;
+  text-align
