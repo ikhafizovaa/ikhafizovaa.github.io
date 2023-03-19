@@ -13,12 +13,21 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav a {
   color: #A2AA9B;
   text-decoration: none;
   font-size: 20px;
+  transition: color 0.2s ease-in-out;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #A2AA9B;
+  color: #3D6184;
 }
 
 /* Welcome section */
@@ -28,6 +37,7 @@ nav a {
   background-position: center;
   height: 100vh;
   width: 100%;
+  box-shadow: inset 0px -40px 20px rgba(0, 0, 0, 0.2);
 }
 
 .welcome-message {
@@ -35,6 +45,8 @@ nav a {
   color: #A2AA9B;
   padding: 50px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .welcome-message h1 {
@@ -48,6 +60,8 @@ nav a {
   color: #A2AA9B;
   padding: 50px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .about-me h2 {
@@ -65,6 +79,8 @@ nav a {
   color: #A2AA9B;
   padding: 50px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio h2 {
@@ -76,6 +92,13 @@ nav a {
   width: 100%;
   max-width: 400px;
   margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.portfolio img:hover {
+  transform: scale(1.1);
 }
 
 /* Contact section */
@@ -84,73 +107,10 @@ nav a {
   color: #A2AA9B;
   padding: 50px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .contact h2 {
   font-size: 36px;
-  margin-bottom: 0;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact label {
-  font-size: 20px;
-  margin: 10px 0;
-}
-
-.contact input,
-.contact textarea {
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 500px;
-}
-
-.contact button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: #445537;
-  color: #A2AA9B;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.contact button:hover {
-  background-color: #A2AA9B;
-  color: #445537;
-}
-
-/* New segment for modern look */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #A2AA9B;
-  background-color: #fff;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #3D6184;
-}
-
-a {
-  color: #74553A;
-}
-
-a:hover {
-  color: #3D6184;
-}
-
-.btn {
-  background-color: #3D6184;
-  color: #fff;
-  border: none;
-  border-radius: 5
-}
+  margin-bottom: 
